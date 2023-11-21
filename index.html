@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Pizzería</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleImages.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body class="background-body">
+
+    <header>
+        
+            <div  class="menu">
+                <!-- <a href="#" class="logo">logo</a>  -->
+               
+                 <img src="../images/logo.jpg" class="menu-logo" alt="">
+        
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Dirección</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Galería</a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></a></i>
+                    <li><a href="#"><i class="bi bi-facebook"></a></i>
+                    <li><a href="#"><i class="bi bi-cart"></a></i>
+                </ul> 
+            </nav>
+            </div>
+        <!--<div class="container">
+   
+            <div class="header-content">
+                <div class="header-txt">
+                    <h1>Pizzería <br> La Vendimia </h1>
+                    <p class="psubtitles"> 
+                    
+                        En esta página puedes encontrar el menú completo de Pizzería La Vendimia. 
+                        Para las ofertas de temporada o semanales, 
+                        ponte en contacto directamente el propietario del restaurante. 
+                        También puedes contactar con ellos a través de su página web.
+                    </p>
+                </div>
+                
+            </div>
+
+        </div> -->
+        <section class="sobre-nos" id="sobrenos">
+            <div class="main">
+                <div class="contentsobre">
+                    <h2>Sobre Nosotros</h2>
+                    <p> En esta página puedes encontrar el menú completo de Pizzería La Vendimia. 
+                        Para las ofertas de temporada o semanales, 
+                        ponte en contacto directamente el propietario del restaurante. 
+                        También puedes contactar con ellos a través de su página web. </p></div>
+                <div class="img-cocina">
+                    <img src="./images/cocina.jpg" alt=""></div>
+            </div>
+        </section>
+
+         <!-- Nueva sección para "Dirección" -->
+         <section class="direccion" id="direccion">
+            <h2>Nuestra Dirección</h2>
+            <p>Estamos ubicados en  Boulogne Sur Mer, 190. Vení a visitarnos y disfrutá de nuestras deliciosas pizzas.</p>
+           
+            <div class="map" id="map">
+
+            <script>
+                // Función para inicializar el mapa
+                function initMap() {
+                    console.log('Mapa inicializado');
+                    // Coordenadas de la ubicación de la pizzería
+                    var pizzeriaLocation = [-33.08292,-68.47611]; 
+            
+                    // Crear el mapa
+                    var map = L.map('map').setView(pizzeriaLocation, 15);
+            
+                    // Agregar una capa de OpenStreetMap al mapa
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '© OpenStreetMap contributors'
+                    }).addTo(map);
+            
+                    // Marcar la ubicación de la pizzería en el mapa
+                    L.marker(pizzeriaLocation).addTo(map)
+                        .bindPopup('Pizzería La Vendimia')
+                        .openPopup();
+                }
+            
+                // Llamar a la función de inicialización del mapa cuando la página esté lista
+                document.addEventListener('DOMContentLoaded', function () {
+                    initMap();
+                });
+            </script>
+            </div>
+        </section>
+        
+
+        <!-- Nueva sección para "Contacto" -->
+        <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes ponerte en contacto con nosotros a través de los siguientes medios:</p>
+            <ul>
+                <li>Email: lavendimiapizzeria@gmail.com</li>
+                <li>Teléfono: 2634786543</li>
+                <li>Redes Sociales:
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+            </ul>
+        </section>
+
+         <!-- Nueva sección para la galería -->
+         <section class="galeria" id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img class="gallery-image" src="./images/jamonyqueso.jpg" alt="Jamón y Queso">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="./images/lavendimia.jpg" alt="pizza la vendimia">
+                </div> 
+                <div class="gallery-item">
+                    <img class="gallery-image" src="./images/calzone.jpg" alt="calzone">
+                </div> 
+                <div class="gallery-item">
+                    <img class="gallery-image" src="./images/napo.jpg" alt="pizza napolitana">
+                </div> 
+                <div class="gallery-item">
+                    <img class="gallery-image" src="./images/especial.jpg" alt="pizza especial">
+                </div> 
+               
+            </div>
+        </section>
+    </header>
+    
+</body>
+</html>
