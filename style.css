@@ -98,6 +98,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -8px;
+    padding-right: 8px;
 }
 
 .sobre-nos img {
@@ -137,4 +139,33 @@ header {
 .map {
     height: 300px;
     width: 300px;
+}
+
+.ColorTitles{
+    color: blueviolet;
+}
+
+.liContact{
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.aContact{
+    color:#874793;
+}
+
+.colorWhatsApp{
+    color:rgb(115 221 12);
+}
+.colorInstagram{
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    color: white;
+    border-radius: 100px;
+    font-size: 18px;
+    padding: 1px 3px 1px 3px;
+}
+
+.colorFacebook{
+    color: rgb(16 0 255);
 }
