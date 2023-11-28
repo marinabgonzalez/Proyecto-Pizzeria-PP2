@@ -3,12 +3,12 @@
 /*font-family: 'Bebas Neue', sans-serif;*/
 
 .menu-logo{
-    background-color:aqua;
-    height: 100px;
-    width: 150px;
+    
+    height: 111px;
+    width: 182px;
     position:relative;
     left:30px;
-    border:3px solid #f2f8e9;
+   
 }
 
 .menu {
@@ -19,6 +19,7 @@
     background: black;
     margin-top: -15px;
     margin-left: -8px;
+    z-index: 1100;
 }
 .background-body{
     background-image: url(images/fondopizza.jpg);
@@ -168,4 +169,69 @@ header {
 
 .colorFacebook{
     color: rgb(16 0 255);
+}
+
+.footer{
+    display: flex;
+    width: 100vw;
+    background: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -8px;
+    padding-right: 7px;
+}
+
+
+.btnVerPdf{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    background-color:#874793;
+    color: White;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+}
+
+.btnVerPdf:hover{
+    background-color:#b480bd; 
+}
+
+
+.positionBtnPdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width:100vw;
+}
+.footerDivLeft{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-grow: 0;
+    padding-left: 50px;
+}
+
+.footerDivcenter{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.footerDivRight{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 50px;
+}
+.footerLogo{
+    width: 80px;
+    height: 80px;
+    margin-bottom: -10px;
+    padding-right: 30px;
 }

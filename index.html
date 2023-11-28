@@ -18,7 +18,7 @@
             <div  class="menu">
                 <!-- <a href="#" class="logo">logo</a>  -->
                
-                 <img src="../images/logo.jpg" class="menu-logo" alt="">
+                 <img src="../images/logoWhitOut.png" class="menu-logo" alt="">
         
             <nav class="navbar">
                 <ul>
@@ -109,7 +109,7 @@
                 <li class="liContact">Teléfono: <a class="aContact" href="https:wa.me/+5492634809555?te xt=Realizar Pedido"><i class="bi bi-whatsapp colorWhatsApp"></i> 2634809555</a></li>
                 <li class="liContact">Redes Sociales:
                     <a href="https://www.instagram.com/la.vendimia.pizzas/" target="_blank"><i class="bi bi-instagram colorInstagram"></i></a>
-                    <a href="https://www.facebook.com/lavendimiapizzas/"><i class="bi bi-facebook colorFacebook"></i></a>
+                    <a href="https://www.facebook.com/lavendimiapizzas/" target="_blank"><i class="bi bi-facebook colorFacebook"></i></a>
                 </li>
             </ul>
         </section>
@@ -138,9 +138,9 @@
         </section>
 
         <section class="buttonpdf" id="pdf">
-        <div>
+        <div class="positionBtnPdf">
             <!-- Botón sin enlace -->
-            <button id="botonPDF">VER NUESTRA CARTA</button>
+            <button id="botonPDF" class="btnVerPdf">VER NUESTRA CARTA</button>
         </div>
 
         <script>
@@ -156,16 +156,19 @@
     </header>
 
     <footer class="footer" id="footer">
-        <p>Contacto: lavendimiapizzeria@gmail.com</p>
-        <p>Teléfono: 2634809555</p>
-        <nav>
+        <div class="footerDivLeft"> 
+            <img src="../images/logoWhitOut.png" class="footerLogo" alt="">
+            <p>Contacto: lavendimiapizzeria@gmail.com</p></div>
+        <div class="footerDivcenter"><p>Teléfono: 2634809555</p></div>
+        
+        <!--<nav>
             <a href="#inicio">Inicio</a> |
             <a href="#sobrenos">Sobre Nosotros</a> |
             <a href="#direccion">Productos</a> |
             <a href="#contacto">Contacto</a>
             <a href="#galeria">Contacto</a>
-        </nav>
-        <p>&copy; 2023 Pizzería La Vendimia</p>
+        </nav>-->
+        <div class="footerDivRight"><p>&copy; 2023 Pizzería La Vendimia</p></div>        
     </footer>
     
 </body>
