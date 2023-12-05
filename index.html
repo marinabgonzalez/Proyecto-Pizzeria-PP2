@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overFlowXhidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="styleImages.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JavaScript de Bootstrap (requiere Popper.js y jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 <body class="background-body">
@@ -27,9 +33,8 @@
                     <li><a href="#direccion">Dirección</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></a></i>
-                    <li><a href="#"><i class="bi bi-facebook"></a></i>
-                    <li><a href="#"><i class="bi bi-cart"></a></i>
+                    <li><a href="https://www.instagram.com/la.vendimia.pizzas/" target="_blank"><i class="bi bi-instagram"></a></i>
+                    <li><a href="https://www.facebook.com/lavendimiapizzas/" target="_blank"><i class="bi bi-facebook"></a></i>
                 </ul> 
             </nav>
             </div>
@@ -58,8 +63,8 @@
                         Para las ofertas de temporada o semanales, 
                         ponte en contacto directamente el propietario del restaurante. 
                         También puedes contactar con ellos a través de su página web. </p></div>
-                <div class="img-cocina">
-                    <img src="./images/cocina.jpg" alt=""></div>
+                <div class="sobre-nos-cont-img">
+                    <img src="./images/cocina.jpg" class="img-cocina" alt=""></div>
             </div>
         </section>
 
@@ -106,7 +111,7 @@
             <p>Puedes ponerte en contacto con nosotros a través de los siguientes medios:</p>
             <ul>
                 <li class="liContact">Email: <a class="aContact" href="mailto:lavendimiapizzeria@gmail.com">lavendimiapizzeria@gmail.com</a></li>
-                <li class="liContact">Teléfono: <a class="aContact" href="https:wa.me/+5492634809555?te xt=Realizar Pedido"><i class="bi bi-whatsapp colorWhatsApp"></i> 2634809555</a></li>
+                <li class="liContact">Teléfono: <a class="aContact" href="https:wa.me/+5492634562305?text=¡Hola! Quiero realizar un pedido."><i class="bi bi-whatsapp colorWhatsApp"></i> 2634809555</a></li>
                 <li class="liContact">Redes Sociales:
                     <a href="https://www.instagram.com/la.vendimia.pizzas/" target="_blank"><i class="bi bi-instagram colorInstagram"></i></a>
                     <a href="https://www.facebook.com/lavendimiapizzas/" target="_blank"><i class="bi bi-facebook colorFacebook"></i></a>
@@ -115,8 +120,8 @@
         </section>
 
          <!-- Nueva sección para la galería -->
-         <section class="galeria" id="galeria">
-            <h2 class="ColorTitles">Galería de Imágenes</h2>
+         <section class="galeria marginleft25" id="galeria">
+            <h2 class ="ColorTitles marginleft25">Galería de Imágenes</h2>
             <div class="gallery-container">
                 <div class="gallery-item">
                     <img class="gallery-image" src="./images/jamonyqueso.jpg" alt="Jamón y Queso">
@@ -125,7 +130,7 @@
                     <img class="gallery-image" src="./images/lavendimia.jpg" alt="pizza la vendimia">
                 </div> 
                 <div class="gallery-item">
-                    <img class="gallery-image" src="./images/calzone.jpg" alt="calzone">
+                    <img class="gallery-image width260Imp" src="./images/calzone.jpg" alt="calzone">
                 </div> 
                 <div class="gallery-item">
                     <img class="gallery-image" src="./images/napo.jpg" alt="pizza napolitana">
